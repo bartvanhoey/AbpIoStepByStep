@@ -3,9 +3,13 @@
 ### Install or Update ABP CLI
 
 ```bash
-dotnet tool install -g Volo.Abp.Cli`
-or
-`dotnet tool update -g Volo.Abp.Cli
+dotnet tool install -g Volo.Abp.Cli
+```
+
+Or
+
+```bash
+dotnet tool update -g Volo.Abp.Cli
 ```
 
 ### Create Solution
