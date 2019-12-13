@@ -2,7 +2,7 @@
 
 ### BookDto
 
-Create a `BookDto` class in `Bvh.BookStore..Application.Contracts` project
+Create a `BookDto` class in `Abp.BookStore..Application.Contracts` project
 
 ```csharp
 public class BookDto : AuditedEntityDto<Guid>
@@ -17,7 +17,7 @@ public class BookDto : AuditedEntityDto<Guid>
 }
 ```
 
-Define mapping in `BookStoreApplicationMapperProfile` in `Bvh.BookStore.Application` project
+Define mapping in `BookStoreApplicationMapperProfile` in `Abp.BookStore.Application` project
 
 ```csharp
 public class BookStoreApplicationAutoMapperProfile : Profile
@@ -29,7 +29,7 @@ public class BookStoreApplicationAutoMapperProfile : Profile
 }
 ```
 
-Add `CreateBookDto` class to `Bvh.BookStore..Application.Contracts` project
+Add `CreateBookDto` class to `Abp.BookStore..Application.Contracts` project
 
 ```csharp
 public class CreateBookDto
@@ -49,13 +49,13 @@ public class CreateBookDto
 }
 ```
 
-Add mapping in `BookStoreApplicationMapperProfile` in `Bvh.BookStore.Application` project
+Add mapping in `BookStoreApplicationMapperProfile` in `Abp.BookStore.Application` project
 
 ```csharp
 CreateMap<CreateBookDto, Book>();
 ```
 
-Add `UpdateBookDto` class to `Bvh.BookStore..Application.Contracts` project
+Add `UpdateBookDto` class to `Abp.BookStore..Application.Contracts` project
 
 ```csharp
 public class UpdateBookDto
@@ -75,13 +75,13 @@ public class UpdateBookDto
 }
 ```
 
-Add mapping in `BookStoreApplicationMapperProfile` in `Bvh.BookStore.Application` project
+Add mapping in `BookStoreApplicationMapperProfile` in `Abp.BookStore.Application` project
 
 ```csharp
 CreateMap<UpdateBookDto, Book>();
 ```
 
-Define an `IBookAppService` interface in `Bvh.BookStore..Application.Contracts` project
+Define an `IBookAppService` interface in `Abp.BookStore..Application.Contracts` project
 
 ```csharp
 public interface IBookAppService :
@@ -95,7 +95,7 @@ public interface IBookAppService :
     }
 ```
 
-Add `BookAppService` class and implement an `IBookAppService` interface in `Bvh.BookStore..Application` project
+Add `BookAppService` class and implement an `IBookAppService` interface in `Abp.BookStore..Application` project
 
 ```csharp
  public class BookAppService :
@@ -109,7 +109,7 @@ Add `BookAppService` class and implement an `IBookAppService` interface in `Bvh.
     }
 ```
 
-Run the `Bvh.BookStore.HttpApi.Host` application and navigate to [https://localhost:XXXX/swagger/](https://localhost:XXXX/swagger/)
+Run the `Abp.BookStore.HttpApi.Host` application and navigate to [https://localhost:XXXX/swagger/](https://localhost:XXXX/swagger/)
 You will see some built-in service endpoints as well as the Book service and its REST-style endpoints
 
 ![swagger-ui](images/swaggerui.png)

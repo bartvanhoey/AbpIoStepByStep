@@ -6,6 +6,6 @@
 
 ### Create Solution
 
-`abp new Bvh.BookStore -u angular`
+`abp new Abp.BookStore -u angular`
 
 [Home](./../../../README.md) | [Next Step](StepByStep/../../Step2/Step2.md)

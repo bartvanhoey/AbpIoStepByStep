@@ -2,7 +2,7 @@
 
 ### Book
 
-Add `Book` class to domain layer `Bvh.BookStore.Domain` project
+Add `Book` class to domain layer `Abp.BookStore.Domain` project
 
 ```csharp
 public class Book : AuditedAggregateRoot<Guid>
@@ -17,7 +17,7 @@ public class Book : AuditedAggregateRoot<Guid>
 }
 ```
 
-Define `BookType` enum in the `Bvh.BookStore.Domain.Shared`
+Define `BookType` enum in the `Abp.BookStore.Domain.Shared`
 
 ```csharp
 public enum BookType
@@ -34,7 +34,7 @@ public enum BookType
 }
 ```
 
-Add `DbSet<Book>` to DbContext in `Bvh.BookStore.EntityFrameworkCore`
+Add `DbSet<Book>` to DbContext in `Abp.BookStore.EntityFrameworkCore`
 
 ```csharp
 public class BookStoreDbContext : AbpDbContext<BookStoreDbContext>
@@ -44,7 +44,7 @@ public class BookStoreDbContext : AbpDbContext<BookStoreDbContext>
 }
 ```
 
-Open `BookStoreDbContextModelCreatingExtensions.cs` in `Bvh.BookStore.EntityFrameworkCore` project and add following code to the end of the ConfigureBookStore method to configure the Book entity
+Open `BookStoreDbContextModelCreatingExtensions.cs` in `Abp.BookStore.EntityFrameworkCore` project and add following code to the end of the ConfigureBookStore method to configure the Book entity
 
 ```csharp
 builder.Entity<Book>(b =>
@@ -55,15 +55,15 @@ builder.Entity<Book>(b =>
 });
 ```
 
-Copy Paste `appsettings.json` from `Bvh.BookStore.HttpApi.Host` to `Bvh.BookStore.EntityFrameworkCore.DbMigrations`
+Copy Paste `appsettings.json` from `Abp.BookStore.HttpApi.Host` to `Abp.BookStore.EntityFrameworkCore.DbMigrations`
 
-Open command prompt in `Bvh.BookStore.EntityFrameworkCore.DbMigrations` and run:
+Open command prompt in `Abp.BookStore.EntityFrameworkCore.DbMigrations` and run:
 
 `dotnet ef migrations add "book_entity"`
 
 `dotnet ef database update`
 
-Add a `BookStoreDataSeedContributor` class deriving from `IDataSeedContributor` to  `Bvh.BookStore.Domain`
+Add a `BookStoreDataSeedContributor` class deriving from `IDataSeedContributor` to  `Abp.BookStore.Domain`
 
 ```csharp
 public class BookStoreDataSeedContributor: IDataSeedContributor, ITransientDependency
@@ -102,7 +102,7 @@ public class BookStoreDataSeedContributor: IDataSeedContributor, ITransientDepen
 }
 ```
 
-Open a command prompt in `Bvh.BookStore.DbMigrator` and run following command to seed sample data
+Open a command prompt in `Abp.BookStore.DbMigrator` and run following command to seed sample data
 
 `dotnet run`
 

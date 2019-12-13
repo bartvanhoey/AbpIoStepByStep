@@ -1,6 +1,6 @@
 ## Seed Sample Data
 
-Add a `BookStoreDataSeedContributor` class deriving from `IDataSeedContributor` to  `Bvh.BookStore.Domain`
+Add a `BookStoreDataSeedContributor` class deriving from `IDataSeedContributor` to  `Abp.BookStore.Domain`
 
 ```csharp
 public class BookStoreDataSeedContributor: IDataSeedContributor, ITransientDependency
@@ -39,7 +39,7 @@ public class BookStoreDataSeedContributor: IDataSeedContributor, ITransientDepen
 }
 ```
 
-Open a command prompt in `Bvh.BookStore.DbMigrator` and run following command to seed sample data
+Open a command prompt in `Abp.BookStore.DbMigrator` and run following command to seed sample data
 
 `dotnet run`
 
