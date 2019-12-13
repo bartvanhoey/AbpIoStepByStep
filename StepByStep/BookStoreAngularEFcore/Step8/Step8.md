@@ -187,7 +187,7 @@ export class BooksModule {}
 Add `providers` to `book-list.component.ts`
 
 ```typescript
-import { NgbDateNativeAdapter, NgbDateAdapter } from '@ng-bootstrap/ng-bootstrap';
+import { NgbDateAdapter, NgbDateNativeAdapter } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   // ...
