@@ -4,11 +4,15 @@
 
 Open a terminal window in `angular` folder and run `yarn` command
 
-`yarn`
+```bash
+yarn
+```
 
 ### BooksModule
 
-`yarn ng generate module books --route books --module app.module`
+```bash
+yarn ng generate module books --route books --module app.module`
+```
 
 `yarn start` to run the application and open [http://localhost:4200/books](http://localhost:4200/books)
 
