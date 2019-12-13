@@ -89,12 +89,9 @@ Add `isModalOpen` variable and `createBook` method to `book-list.component.ts`
 ```typescript
 isModalOpen = false;
 
-
-
 createBook() {
   this.isModalOpen = true;
 }
-
 ```
 
 Add `form` variable and inject `FormBuilder` service in `book-list.component.ts`
