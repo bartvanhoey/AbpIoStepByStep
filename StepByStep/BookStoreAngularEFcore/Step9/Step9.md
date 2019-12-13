@@ -45,7 +45,6 @@ Add `update` method to `books.state.ts` that will listen to `UpdateBook` action
 ```typescript
 import { ..., UpdateBook } from '../actions/books.actions';
 
-
 @Action(UpdateBook)
 update(ctx: StateContext<Books.State>, action: UpdateBook) {
   return this.booksService
