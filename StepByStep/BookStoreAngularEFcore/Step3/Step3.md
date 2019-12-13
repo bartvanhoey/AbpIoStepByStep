@@ -59,8 +59,12 @@ Copy Paste `appsettings.json` from `Abp.BookStore.HttpApi.Host` to `Abp.BookStor
 
 Open command prompt in `Abp.BookStore.EntityFrameworkCore.DbMigrations` and run:
 
-`dotnet ef migrations add "book_entity"`
+```bash
+dotnet ef migrations add "book_entity"
+```
 
-`dotnet ef database update`
+```bash
+dotnet ef database update
+```
 
 [Home](./../../../README.md) | [Previous Step](StepByStep/../../Step2/Step2.md) | [Next Step](StepByStep/../../Step4/Step4.md)
