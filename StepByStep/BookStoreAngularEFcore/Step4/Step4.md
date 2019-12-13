@@ -41,7 +41,9 @@ public class BookStoreDataSeedContributor: IDataSeedContributor, ITransientDepen
 
 Open a command prompt in `Abp.BookStore.DbMigrator` and run following command to seed sample data
 
-`dotnet run`
+```bash
+dotnet run
+```
 
 Check `BookStore` Database to see Inserted Data
 
