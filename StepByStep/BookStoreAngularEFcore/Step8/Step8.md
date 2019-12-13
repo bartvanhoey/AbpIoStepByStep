@@ -3,6 +3,8 @@
 Create an interface `CreateInput` in `books.ts`
 
 ```typescript
+import { Books } from '../models';
+
 export interface CreateInput {
   name: string;
   type: BookType;
