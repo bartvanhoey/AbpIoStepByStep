@@ -18,6 +18,6 @@ Open command prompt in `.DbMigrator` project and run `dotnet run` to apply Datab
 
 ### Run the Asp.NET Core Application
 
-Ensure that the `.HttpApi.Host` project is the startup project and run the application which will open a Swagger UI
+Ensure that the `.HttpApi.Host` project is the startup project and `Run the Application` which will open `Swagger UI`
 
 [Home](./../../../README.md) | [Previous Step](StepByStep/../../Step1/Step1.md) | [Next Step](StepByStep/../../Step3/Step3.md)
