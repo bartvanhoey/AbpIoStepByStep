@@ -2,7 +2,7 @@
 
 ### Change Connection String
 
-Change connection string in `appsettings.json` files under `Abp.BookStore.HttpApi.Host` and `.DbMigrator` project
+Change connection string in `appsettings.json` files under `Abp.BookStore.HttpApi.Host` and `Abp.BookStore.DbMigrator` project
 
 ```json
 {
