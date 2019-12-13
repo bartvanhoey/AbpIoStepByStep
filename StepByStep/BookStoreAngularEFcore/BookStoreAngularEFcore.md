@@ -1,4 +1,4 @@
-## abp.io Asp.NET Core Angular app with EF Core database step-by-step
+## abp.io Asp.NET Core Angular Application with EF Core database step-by-step
 
 [Step 1: New Solution](./Step1/Step1.md)
 
