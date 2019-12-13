@@ -37,6 +37,9 @@ export class CreateBook {
 Add `create` method to `books.state.ts` that will listen to `CreateBook` action
 
 ```typescript
+import { ..., CreateBook } from '../actions/books.actions';
+import { ..., switchMap } from 'rxjs/operators';
+
 @Action(CreateBook)
 create(ctx: StateContext<Books.State>, action: CreateBook) {
   return this.booksService
