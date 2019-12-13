@@ -1,7 +1,5 @@
 ## Application Service
 
-### BookDto
-
 Create a `BookDto` class in `Abp.BookStore..Application.Contracts` project
 
 ```csharp
