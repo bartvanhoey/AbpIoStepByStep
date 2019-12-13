@@ -26,6 +26,8 @@ create(createInput: Books.CreateInput): Observable<Books.Book> {
 Add `CreateBook` action to `books.action.ts`
 
 ```typescript
+import { Books } from '../models';
+
 export class CreateBook {
   static readonly type = '[Books] Create Book';
   constructor(public payload: Books.CreateInput) { }
