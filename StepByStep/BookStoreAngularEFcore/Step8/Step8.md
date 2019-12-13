@@ -3,8 +3,6 @@
 Create an interface `CreateInput` in `books.ts`
 
 ```typescript
-import { Books } from '../models';
-
 export interface CreateInput {
   name: string;
   type: BookType;
@@ -16,6 +14,8 @@ export interface CreateInput {
 Add `create` method in `books.service.ts`
 
 ```typescript
+import { Books } from '../models';
+
 create(createInput: Books.CreateInput): Observable<Books.Book> {
   return this.restService.request<Books.CreateInput, Books.Book>({
     method: 'POST',

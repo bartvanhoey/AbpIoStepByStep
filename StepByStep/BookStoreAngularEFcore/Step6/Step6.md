@@ -9,7 +9,7 @@ yarn
 ### BooksModule
 
 ```bash
-yarn ng generate module books --route books --module app.module`
+yarn ng generate module books --route books --module app.module
 ```
 
 `yarn start` to run the application and open [http://localhost:4200/books](http://localhost:4200/books)
