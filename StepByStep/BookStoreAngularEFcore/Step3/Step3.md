@@ -61,9 +61,6 @@ Open command prompt in `Abp.BookStore.EntityFrameworkCore.DbMigrations` and run:
 
 ```bash
 dotnet ef migrations add "book_entity"
-```
-
-```bash
 dotnet ef database update
 ```
 
