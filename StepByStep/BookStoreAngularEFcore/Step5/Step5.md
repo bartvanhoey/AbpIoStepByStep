@@ -1,6 +1,6 @@
 ## Application Service
 
-Create a `BookDto` class in `Abp.BookStore..Application.Contracts` project
+Create a `BookDto` class in `Abp.BookStore.Application.Contracts` project
 
 ```csharp
 public class BookDto : AuditedEntityDto<Guid>
@@ -27,7 +27,7 @@ public class BookStoreApplicationAutoMapperProfile : Profile
 }
 ```
 
-Add `CreateBookDto` class to `Abp.BookStore..Application.Contracts` project
+Add `CreateBookDto` class to `Abp.BookStore.Application.Contracts` project
 
 ```csharp
 public class CreateBookDto
@@ -53,7 +53,7 @@ Add mapping in `BookStoreApplicationMapperProfile` in `Abp.BookStore.Application
 CreateMap<CreateBookDto, Book>();
 ```
 
-Add `UpdateBookDto` class to `Abp.BookStore..Application.Contracts` project
+Add `UpdateBookDto` class to `Abp.BookStore.Application.Contracts` project
 
 ```csharp
 public class UpdateBookDto
@@ -79,7 +79,7 @@ Add mapping in `BookStoreApplicationMapperProfile` in `Abp.BookStore.Application
 CreateMap<UpdateBookDto, Book>();
 ```
 
-Define an `IBookAppService` interface in `Abp.BookStore..Application.Contracts` project
+Define an `IBookAppService` interface in `Abp.BookStore.Application.Contracts` project
 
 ```csharp
 public interface IBookAppService :
@@ -93,7 +93,7 @@ public interface IBookAppService :
     }
 ```
 
-Add `BookAppService` class and implement an `IBookAppService` interface in `Abp.BookStore..Application` project
+Add `BookAppService` class and implement an `IBookAppService` interface in `Abp.BookStore.Application` project
 
 ```csharp
  public class BookAppService :
