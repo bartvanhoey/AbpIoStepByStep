@@ -44,11 +44,8 @@ Inject `ConfirmationService` in `book-list.component.ts`
 
 ```typescript
 import { ConfirmationService } from '@abp/ng.theme.shared';
-//...
-constructor(
-  //...
-  private confirmationService: ConfirmationService
-)
+
+constructor(...,  private confirmationService: ConfirmationService)
 ```
 
 Add `delete` method to `book-list.component.ts`
