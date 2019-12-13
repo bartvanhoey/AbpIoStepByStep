@@ -206,7 +206,7 @@ booksType = Books.BookType;
 bookTypeArr = Object.keys(Books.BookType).filter(bookType => typeof this.booksType[bookType] === 'number');
 ```
 
-Add `abp-button` save button to `book-list.component.html`
+Add `abp-button` save button to `abpFooter` of modal in `book-list.component.html`
 
 ```html
 <ng-template #abpFooter>
