@@ -1,8 +1,6 @@
 ## Books Page
 
-### Install NPM Packages
-
-Open a terminal window in `angular` folder and run `yarn` command
+Open a terminal window in `angular` folder and run `yarn` command to install NPM packages
 
 ```bash
 yarn
