@@ -131,9 +131,7 @@ import { GetBooks } from '../../store/actions';
 })
 export class BookListComponent implements OnInit {
   @Select(BooksState.getBooks) books$: Observable<Books.Book[]>;
-
   booksType = Books.BookType;
-
   loading = false;
 
   constructor(private store: Store) {}
