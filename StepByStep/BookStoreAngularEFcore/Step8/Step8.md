@@ -14,8 +14,6 @@ export interface CreateInput {
 Add `create` method in `books.service.ts`
 
 ```typescript
-import { Books } from '../models';
-
 create(createInput: Books.CreateInput): Observable<Books.Book> {
   return this.restService.request<Books.CreateInput, Books.Book>({
     method: 'POST',
