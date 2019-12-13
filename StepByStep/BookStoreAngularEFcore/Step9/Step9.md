@@ -57,11 +57,11 @@ Import `BooksService` and add `selectedBook` variable to `book-list.component.ts
 
 ```typescript
 import { BooksService } from '../shared/books.service';
-//...
+
 selectedBook = {} as Books.Book;
 
 constructor(
-  //...
+  
   private booksService: BooksService
 )
 ```
@@ -96,7 +96,7 @@ Modify `createBook` method in `book-list.component.ts`
 ```typescript
 createBook() {
   this.selectedBook = {} as Books.Book;
-  //...
+  
 }
 ```
 

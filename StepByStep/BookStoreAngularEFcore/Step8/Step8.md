@@ -89,7 +89,7 @@ Add `isModalOpen` variable and `createBook` method to `book-list.component.ts`
 ```typescript
 isModalOpen = false;
 
-//...
+
 
 createBook() {
   this.isModalOpen = true;
@@ -201,7 +201,7 @@ export class BookListComponent implements OnInit {
 Create `bookTypeArr` array in `book-list.component.ts`
 
 ```typescript
-//...
+
 booksType = Books.BookType;
 bookTypeArr = Object.keys(Books.BookType).filter(bookType => typeof this.booksType[bookType] === 'number');
 ```
@@ -223,9 +223,9 @@ Add `save button` to `abpFooter` of modal in `book-list.component.html`
 Define a `save` method in `book-list.component.ts`
 
 ```typescript
-//...
+
 import { ..., CreateBook } from '../../store/actions';
-//...
+
 save() {
   if (this.form.invalid) { return; }
   this.store.dispatch(new CreateBook(this.form.value)).subscribe(() => {

@@ -24,7 +24,7 @@ Add `delete` method to `books.state.ts`
 
 ```typescript
 import { ... , DeleteBook } from '../actions/books.actions';
-//...
+
 @Action(DeleteBook)
 delete(ctx: StateContext<Books.State>, action: DeleteBook) {
   return this.booksService.delete(action.id).pipe(switchMap(() => ctx.dispatch(new GetBooks())));
@@ -53,7 +53,7 @@ Add `delete` method to `book-list.component.ts`
 ```typescript
 import { ... , DeleteBook } from '../../store/actions';
 import { ... , Toaster } from '@abp/ng.theme.shared';
-//...
+
 delete(id: string, name: string) {
   this.confirmationService
     .error(`${name} will be deleted. Do you confirm that?`, 'Are you sure?')
