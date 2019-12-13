@@ -74,4 +74,4 @@ export class BooksRoutingModule {}
 
 ```  
 
-[Home](../../README.md) | [Previous Step](StepByStep/../../Step5/Step5.md) | [Next Step](StepByStep/../../Step7/Step7.md)
+[Home](./../../../README.md) | [Previous Step](StepByStep/../../Step5/Step5.md) | [Next Step](StepByStep/../../Step7/Step7.md)

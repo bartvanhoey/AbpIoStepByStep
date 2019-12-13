@@ -116,4 +116,4 @@ You will see some built-in service endpoints as well as the Book service and its
 
 Swagger has a nice UI to test APIs. You can try to execute the [GET] /api/app/book API to get a list of books
 
-[Home](../../README.md) | [Previous Step](StepByStep/../../Step3/Step3.md) | [Next Step](StepByStep/../../Step6/Step6.md)
+[Home](./../../../README.md) | [Previous Step](StepByStep/../../Step3/Step3.md) | [Next Step](StepByStep/../../Step6/Step6.md)

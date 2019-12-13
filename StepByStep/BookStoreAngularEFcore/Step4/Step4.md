@@ -45,4 +45,4 @@ Open a command prompt in `Bvh.BookStore.DbMigrator` and run following command to
 
 Check `BookStore` Database to see Inserted Data
 
-[Home](../../README.md) | [Previous Step](StepByStep/../../Step3/Step3.md) | [Next Step](StepByStep/../../Step5/Step5.md)
+[Home](./../../../README.md) | [Previous Step](StepByStep/../../Step3/Step3.md) | [Next Step](StepByStep/../../Step5/Step5.md)

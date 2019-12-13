@@ -231,4 +231,4 @@ save() {
 }
 ```
 
-[Home](../../README.md) | [Previous Step](StepByStep/../../Step7/Step7.md) | [Next Step](StepByStep/../../Step9/Step9.md)
+[Home](./../../../README.md) | [Previous Step](StepByStep/../../Step7/Step7.md) | [Next Step](StepByStep/../../Step9/Step9.md)

@@ -166,4 +166,4 @@ Update modal header in `book-list.component.html`
 </ng-template>
 ```
 
-[Home](../../README.md) | [Previous Step](StepByStep/../../Step8/Step8.md) | [Next Step](StepByStep/../../Step10/Step10.md)
+[Home](./../../../README.md) | [Previous Step](StepByStep/../../Step8/Step8.md) | [Next Step](StepByStep/../../Step10/Step10.md)

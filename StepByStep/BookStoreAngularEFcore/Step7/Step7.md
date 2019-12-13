@@ -184,4 +184,4 @@ Modify `book-list.component.html`
 </div>
 ```
 
-[Home](../../README.md) | [Previous Step](StepByStep/../../Step6/Step6.md) | [Next Step](StepByStep/../../Step8/Step8.md)
+[Home](./../../../README.md) | [Previous Step](StepByStep/../../Step6/Step6.md) | [Next Step](StepByStep/../../Step8/Step8.md)
