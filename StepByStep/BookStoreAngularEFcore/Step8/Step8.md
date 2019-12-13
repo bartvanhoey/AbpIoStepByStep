@@ -111,6 +111,8 @@ constructor( ..., private fb: FormBuilder) {}
 Add `buildForm` method to `book-list.component.ts`
 
 ```typescript
+import { ..., Validators } from '@angular/forms';
+
 buildForm() {
   this.form = this.fb.group({
     name: ['', Validators.required],
