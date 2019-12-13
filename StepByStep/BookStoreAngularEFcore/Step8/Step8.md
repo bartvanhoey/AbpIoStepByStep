@@ -104,10 +104,7 @@ import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 
 form: FormGroup;
 
-constructor(
-  //...
-  private fb: FormBuilder
-) {}
+constructor(  ..., private fb: FormBuilder) {}
 
 ```
 
