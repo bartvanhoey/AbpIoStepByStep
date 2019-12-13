@@ -31,7 +31,7 @@ delete(ctx: StateContext<Books.State>, action: DeleteBook) {
 }
 ```
 
-Add delete button to `ngbDropdownMenu` in `book-list.component.html`
+Add `delete` button to `ngbDropdownMenu` in `book-list.component.html`
 
 ```html
 <div ngbDropdownMenu>
