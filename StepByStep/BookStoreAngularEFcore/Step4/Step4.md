@@ -6,8 +6,13 @@ Add a `BookStoreDataSeedContributor` class deriving from `IDataSeedContributor` 
 public class BookStoreDataSeedContributor: IDataSeedContributor, ITransientDependency
 {
     private readonly IRepository<Book, Guid> _bookRepository;
+    private readonly IGuidGenerator _guidGenerator;
 
-    public BookStoreDataSeedContributor(IRepository<Book,Guid> bookRepository) => _bookRepository = bookRepository;
+    public BookStoreDataSeedContributor(IRepository<Book,Guid> bookRepository, IGuidGenerator guidGenerator)
+    {
+        _bookRepository = bookRepository;
+        _guidGenerator = guidGenerator;
+    }
 
     public async Task SeedAsync(DataSeedContext context)
     {
@@ -17,23 +22,11 @@ public class BookStoreDataSeedContributor: IDataSeedContributor, ITransientDepen
         }
 
         await _bookRepository.InsertAsync(
-            new Book
-            {
-                Name = "1984",
-                Type = BookType.Dystopia,
-                PublishDate = new DateTime(1949, 6, 8),
-                Price = 19.84f
-            }
+            new Book(_guidGenerator.Create(), "Test book 1", BookType.Fantastic, new DateTime(2015, 05, 24), 21)
         );
 
         await _bookRepository.InsertAsync(
-            new Book
-            {
-                Name = "The Hitchhiker's Guide to the Galaxy",
-                Type = BookType.ScienceFiction,
-                PublishDate = new DateTime(1995, 9, 27),
-                Price = 42.0f
-            }
+            new Book(_guidGenerator.Create(), "Test book 2", BookType.Science, new DateTime(2014, 02, 11), 15)
         );
     }
 }
