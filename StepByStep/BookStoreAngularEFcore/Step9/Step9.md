@@ -96,6 +96,7 @@ Modify `createBook` method in `book-list.component.ts`
 ```typescript
 createBook() {
   this.selectedBook = {} as Books.Book;
+  // ...
   
 }
 ```
