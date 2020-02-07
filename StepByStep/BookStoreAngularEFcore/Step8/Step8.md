@@ -129,7 +129,7 @@ createBook() {
 }
 ```
 
-Add `form` in `ng-template #abpBody` of `abp-modal` in `book-list.component.html`
+Add `form` in `abpBody` of `abp-modal` in `book-list.component.html`
 
 ```html
 <ng-template #abpBody>
@@ -203,7 +203,7 @@ booksType = Books.BookType;
 bookTypeArr = Object.keys(Books.BookType).filter(bookType => typeof this.booksType[bookType] === 'number');
 ```
 
-Add `save button` to `abpFooter` of modal in `book-list.component.html`
+Add `save button` to `abpFooter` of `abp-modal` in `book-list.component.html`
 
 ```html
 <ng-template #abpFooter>
