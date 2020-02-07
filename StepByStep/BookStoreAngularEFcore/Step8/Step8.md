@@ -129,7 +129,7 @@ createBook() {
 }
 ```
 
-Add `form` in body template of modal in `book-list.component.html`
+Add `form` in `ng-template #abpBody` of `abp-modal` in `book-list.component.html`
 
 ```html
 <ng-template #abpBody>
