@@ -74,7 +74,7 @@ buildForm() {
     name: [this.selectedBook.name || '', Validators.required],
     type: this.selectedBook.type || null,
     publishDate: this.selectedBook.publishDate ? new Date(this.selectedBook.publishDate) : null,
-    price: this.selectedBook.price || null,
+    price: this.selectedBook.price || null
   });
 }
 ```
