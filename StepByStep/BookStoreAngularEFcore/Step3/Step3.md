@@ -2,21 +2,6 @@
 
 ### Book
 
-Add `Book` class to domain layer `Abp.BookStore.Domain` project
-
-```csharp
-public class Book : AuditedAggregateRoot<Guid>
-{
-    public string Name { get; set; }
-
-    public BookType Type { get; set; }
-
-    public DateTime PublishDate { get; set; }
-
-    public float Price { get; set; }
-}
-```
-
 Define `BookType` enum in the `Abp.BookStore.Domain.Shared`
 
 ```csharp
@@ -31,6 +16,21 @@ public enum BookType
     Science,
     ScienceFiction,
     Poetry
+}
+```
+
+Add `Book` class to domain layer `Abp.BookStore.Domain` project
+
+```csharp
+public class Book : AuditedAggregateRoot<Guid>
+{
+    public string Name { get; set; }
+
+    public BookType Type { get; set; }
+
+    public DateTime PublishDate { get; set; }
+
+    public float Price { get; set; }
 }
 ```
 
