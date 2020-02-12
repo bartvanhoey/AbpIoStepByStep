@@ -1,6 +1,9 @@
 ## Database, Migrations & Run Backend Application
 
-Change connection string in `appsettings.json` files under `Abp.BookStore.HttpApi.Host` and `Abp.BookStore.DbMigrator` project
+
+Navigate to the `aspnet-core` folder in the `Abp.BookStore` folder and open the `Abp.BookStore.sln` in Visual Studio.
+
+Change the connection string in `appsettings.json` files under `Abp.BookStore.HttpApi.Host` and `Abp.BookStore.DbMigrator` project
 
 ```json
 {
