@@ -1,6 +1,6 @@
 ## Application Service
 
-Add a `BookDto` class in `Abp.BookStore.Application.Contracts` project
+Add a `BookDto` class to `Abp.BookStore.Application.Contracts` project
 
 ```csharp
 public class BookDto : AuditedEntityDto<Guid>
