@@ -1,6 +1,6 @@
 ## Application Service
 
-Create a `BookDto` class in `Abp.BookStore.Application.Contracts` project
+Add a `BookDto` class in `Abp.BookStore.Application.Contracts` project
 
 ```csharp
 public class BookDto : AuditedEntityDto<Guid>
@@ -15,19 +15,7 @@ public class BookDto : AuditedEntityDto<Guid>
 }
 ```
 
-Define mapping in `BookStoreApplicationMapperProfile` in `Abp.BookStore.Application` project
-
-```csharp
-public class BookStoreApplicationAutoMapperProfile : Profile
-{
-    public BookStoreApplicationAutoMapperProfile()
-    {
-        CreateMap<Book, BookDto>();
-    }
-}
-```
-
-Add `CreateBookDto` class to `Abp.BookStore.Application.Contracts` project
+Add a `CreateBookDto` class to `Abp.BookStore.Application.Contracts` project
 
 ```csharp
 public class CreateBookDto
@@ -47,13 +35,7 @@ public class CreateBookDto
 }
 ```
 
-Add mapping in `BookStoreApplicationMapperProfile` in `Abp.BookStore.Application` project
-
-```csharp
-CreateMap<CreateBookDto, Book>();
-```
-
-Add `UpdateBookDto` class to `Abp.BookStore.Application.Contracts` project
+Add an `UpdateBookDto` class to `Abp.BookStore.Application.Contracts` project
 
 ```csharp
 public class UpdateBookDto
@@ -73,10 +55,18 @@ public class UpdateBookDto
 }
 ```
 
-Add mapping in `BookStoreApplicationMapperProfile` in `Abp.BookStore.Application` project
+Define mappings in `BookStoreApplicationMapperProfile` in `Abp.BookStore.Application` project
 
 ```csharp
-CreateMap<UpdateBookDto, Book>();
+public class BookStoreApplicationAutoMapperProfile : Profile
+{
+    public BookStoreApplicationAutoMapperProfile()
+    {
+        CreateMap<Book, BookDto>();
+        CreateMap<CreateBookDto, Book>();
+        CreateMap<UpdateBookDto, Book>();
+    }
+}
 ```
 
 Define an `IBookAppService` interface in `Abp.BookStore.Application.Contracts` project
