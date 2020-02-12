@@ -38,6 +38,6 @@ Open a command prompt in `Abp.BookStore.DbMigrator` and run following command to
 dotnet run
 ```
 
-Check the `BookStore` Database in `Microsoft SQL Server Management Studio` to see Inserted Data
+Check the `BookStore` database in `Microsoft SQL Server Management Studio` to see Inserted Data
 
 [Home](./../../../README.md) | [Previous Step](StepByStep/../../Step3/Step3.md) | [Next Step](StepByStep/../../Step5/Step5.md)
