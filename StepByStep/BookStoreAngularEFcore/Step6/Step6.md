@@ -19,7 +19,12 @@ yarn ng generate module books --route books --module app.module
 Open app-routing.module.ts and replace books as shown below:
 
 ```typescript
+// ...
+import { ApplicationLayoutComponent } from '@abp/ng.theme.basic';
+
+const routes: Routes = [
 {
+    // ...
     path: 'books',
     component: ApplicationLayoutComponent,
     loadChildren: () => import('./books/books.module').then(m => m.BooksModule),
@@ -28,7 +33,8 @@ Open app-routing.module.ts and replace books as shown below:
         name: 'Books'
       } as ABP.Route
     }
-  }
+}
+];
 ```
 
 Replace content books.component.html with `<router-outlet></router-outlet>`
